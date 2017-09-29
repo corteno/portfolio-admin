@@ -65,6 +65,11 @@ p {
 }
 
 @font-face {
+    font-family: MonsterratLight;
+    src: url('./fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
     font-family: MonsterratMedium;
     src: url('./fonts/Montserrat-Medium.ttf');
 }

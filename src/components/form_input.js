@@ -12,7 +12,10 @@ class FormInput extends Component {
                         this.props.value ? this.props.value : ''
                     }
                     onChange={event => this.props.onInputChange(event)}
+                    required={true}
                 />
+                <div className="bar"></div>
+                <label className="form-label" htmlFor="">{this.props.label}</label>
             </div>
 
         );

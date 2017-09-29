@@ -1,0 +1,155 @@
+.admin-wrapper{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.admin-header{
+    height: 50px;
+    width: 100%;
+    background: #424242;
+}
+
+.hamburger{
+    position: relative;
+    height: 3px;
+    width: 25px;
+    background: #E0E0E0;
+    margin-left: 10px;
+    margin-top: 23px;
+    cursor: pointer;
+}
+
+
+.hamburger:before, .hamburger:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #E0E0E0;
+}
+
+.hamburger:before{
+    top: -10px;
+}
+
+.hamburger:after{
+    top: 10px;
+}
+
+.menu-wrapper{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    left: -100%;
+
+
+    transition: 0.3s all ease-in-out;
+}
+
+.menu-title{
+    color: #E0E0E0;
+    font-family: MonsterratLight;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #616161;
+    z-index: 10;
+}
+
+.menu-list{
+    position: absolute;
+    width: 60%;
+    height: 100vh;
+    padding-left: 15px;
+    background: #4b4b4b;
+    padding-top: 60px;
+    z-index: 5;
+}
+
+.menu-list-item{
+    color: #E0E0E0;
+    font-family: MonsterratLight;
+    font-size: 18px;
+    margin: 5px 0;
+    padding-left: 5px;
+    border-left: 3px solid #4b4b4b;
+
+    transition: 0.2s all ease-in-out;
+}
+
+
+
+.menu-list-active{
+    padding-left: 8px;
+    border-left: 3px solid #E0E0E0;
+}
+
+.menu-active .menu-background{
+    pointer-events: auto;
+    opacity: 0.4;
+}
+
+
+.menu-active{
+    left: 0;
+}
+
+.menu-background{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    right: 0;
+
+    background: #000;
+    opacity: 0;
+
+    transition: 0.2s all ease-in-out;
+    transition-delay: 0.1s;
+    pointer-events: none;
+}
+
+.dashboards-content-wrapper{
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-title{
+    justify-content: center;
+    font-size: 28px;
+    color: #212121;
+}
+
+.contacts-list{
+    width: 100%;
+    margin-left: 10px;
+}
+
+.contact-list-item{
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.contact-name{
+    font-size: 18px;
+}
+
+.contact-email, .contact-message{
+    font-family: MonsterratLight;
+}
+
+.contact-message{
+    width: 150px;
+    white-space: nowrap;
+    overflow:hidden !important;
+    text-overflow: ellipsis;
+}
+
+
+
+
+
+
