@@ -4,10 +4,11 @@
     width: 100%;
 }
 
-.admin-header{
+.admin-header {
     height: 50px;
     width: 100%;
     background: #424242;
+    align-items: center;
 }
 
 .hamburger{
@@ -16,7 +17,6 @@
     width: 25px;
     background: #E0E0E0;
     margin-left: 10px;
-    margin-top: 23px;
     cursor: pointer;
 }
 
@@ -35,6 +35,16 @@
 
 .hamburger:after{
     top: 10px;
+}
+
+.logout{
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+    margin-right: 10px;
+
+    background: url("../img/log-out.svg") no-repeat center center;
+    background-size: contain;
 }
 
 .menu-wrapper{
@@ -134,22 +144,52 @@
 }
 
 .contact-name{
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 0px;
 }
 
 .contact-email, .contact-message{
     font-family: MonsterratLight;
 }
 
-.contact-message{
-    width: 150px;
-    white-space: nowrap;
-    overflow:hidden !important;
-    text-overflow: ellipsis;
+.contact-email{
+    margin-bottom: 5px;
+    cursor: pointer;
 }
 
 
+.contact-message{
+    color: #9E9E9E;
+}
 
+.notification-wrapper{
+    position: fixed;
+    bottom: 10px;
+    width: calc(100% - 20px);
+    min-height: 50px;
+    margin: 0 10px;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
 
+    background: #01579B;
 
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+
+    animation-name: notification-open;
+    animation-duration: 3.1s;
+
+}
+
+@keyframes notification-open {
+    0% {opacity: 0}
+    15% {opacity: 1}
+    85% {opacity: 1}
+    100% {opacity: 0}
+}
+
+.notification-message{
+    color: #E0E0E0;
+    font-family: MonsterratLight;
+}
 

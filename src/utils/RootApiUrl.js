@@ -1,3 +1,3 @@
-const ROOT_API_URL = 'http://localhost:3000';
+const ROOT_API_URL = 'https://bd-portfolio-api.herokuapp.com';
 
 module.exports = ROOT_API_URL;
